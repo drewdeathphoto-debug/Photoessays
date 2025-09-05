@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drew Death</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar"><a href="../index.html">Drew Death</a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Essays</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="https://instagram.com/drew.death" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+<!-- Essay Content & Images -->
+    <main class="essay-content">
+        <h1>Essay Title Goes Here</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <figure>
+            <img src="../images/essay-template/cover.jpg" alt="Description of photo">
+            <figcaption>Optional caption describing the photo.</figcaption>
+        </figure>
+
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. 
+        </p>
+
+        <figure>
+            <img src="../images/essay-template/cover.jpg" alt="Description of photo">
+            <figcaption>Another optional caption.</figcaption>
+        </figure>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+		
+		 <figure>
+            <img src="../images/essay-template/cover.jpg" alt="Description of photo">
+            <figcaption>Another optional caption.</figcaption>
+        </figure>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!-- Navigation Between Essays 
+        
+		<div class="essay-nav">
+            <a href="city-shadows.html" class="prev-essay">← Previous Essay</a>
+            <a href="winter-silence.html" class="next-essay">Next Essay →</a>
+        </div>
+		
+		-->
+    </main>
+	<!-- Lightbox code --!>
+		<div id="lightbox" class="lightbox" style="display:none;">
+		<span class="lightbox-close">&times;</span>
+		<img class="lightbox-img" src="" alt="Full size image">
+		</div>
+	<script>
+	  // Select lightbox elements
+	  const lightbox = document.getElementById('lightbox');
+	  const lightboxImg = document.querySelector('.lightbox-img');
+	  const lightboxClose = document.querySelector('.lightbox-close');
+
+	  // When any essay image is clicked, show it in lightbox
+	  document.querySelectorAll('.essay-content img').forEach(img => {
+		img.style.cursor = 'pointer';  // show pointer on hover
+		img.addEventListener('click', () => {
+		  lightboxImg.src = img.src;    // use same image src or you can add data-full-src for higher res
+		  lightbox.style.display = 'flex';
+		});
+	  });
+
+	  // Close lightbox on clicking close button
+	  lightboxClose.addEventListener('click', () => {
+		lightbox.style.display = 'none';
+		lightboxImg.src = '';
+	  });
+
+	  // Close lightbox on clicking outside the image
+	  lightbox.addEventListener('click', e => {
+		if (e.target === lightbox) {
+		  lightbox.style.display = 'none';
+		  lightboxImg.src = '';
+		}
+	  });
+	</script>
+<hr class="essay-end">
+
+<footer class="site-footer">
+  <p>&copy; 2025 Drew Deatherage. All rights reserved.</p>
+</footer>
+</body>
+</html>

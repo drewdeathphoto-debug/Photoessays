@@ -1,0 +1,19 @@
+website/
+│── index.html
+│── essays.html
+│── about.html
+│── styles.css
+│── scripts.js
+│── images/
+│   └── essays/
+│       ├── tuscany-dawn/
+│       │   ├── cover.jpg
+│       │   ├── 1.jpg
+│       │   ├── 2.jpg
+│       │   └── ...
+│       ├── city-shadows/
+│       │   ├── cover.jpg
+│       │   └── ...
+│       └── winter-silence/
+│           ├── cover.jpg
+│           └── ...
