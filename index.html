@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drew Death – Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, sans-serif;
-      background-color: #111;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drew Death</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="icon" href="icons/drewdeath-favicon.png" type="image/png">
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      line-height: 1.5;
-      opacity: 0.85;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      font-size: 0.85rem;
-      opacity: 0.6;
-    }
-  </style>
 </head>
+
 <body>
-  <h1>Coming Soon</h1>
-  <p>
-    I'm building something new — a place to share my writing, photo, and ongoing projects.
-    Check back soon to see what's next.
-  </p>
-  <footer>© <script>document.write(new Date().getFullYear());</script> Drew Death Photo</footer>
+<!-- Navigation -->
+	<nav class="navbar">
+	<div class="nav-left">
+		<a href="index.html">
+		<img src="icons/drewdeath-trim.png" alt="Logo" class="nav-icon">
+		</a>
+	</div>
+
+	<div class="nav-center">
+		<span>Observations in Light and Language</span>
+	</div>
+
+	<div class="nav-right">
+		<a href="index.html">Essays</a>
+		<a href="about.html">About</a>
+		<a href="https://instagram.com/drew.death" target="_blank">
+		<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+  
+	<!-- Hamburger icon -->
+	<div class="hamburger" id="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<!-- Mobile menu -->
+	<div class="mobile-menu" id="mobileMenu">
+		<a href="index.html">Essays</a>
+		<a href="about.html">About</a>
+		<a href="https://instagram.com/drew.death" target="_blank">
+			<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+</nav>
+
+    
+	<main class="page-content">
+	
+    </main>
+	
+    <!-- Photo Grid -->
+    <main class="photo-grid" id="photoGrid"></main>
+    <script src="scripts.js"></script>
+	
+	<hr class="essay-end">
+	<footer class="site-footer">
+	  © <script>document.write(new Date().getFullYear());</script> Drew Deatherage<p>||•ō.|</p>
+	</footer>
 </body>
 </html>

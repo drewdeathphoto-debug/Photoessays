@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Drew Death</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drew Death</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="icon" href="icons/drewdeath-favicon.png" type="image/png">
+
 </head>
+
 <body>
+<!-- Navigation -->
+	<nav class="navbar">
+	<div class="nav-left">
+		<a href="index.html">
+		<img src="icons/drewdeath-trim.png" alt="Logo" class="nav-icon">
+		</a>
+	</div>
 
-    <!-- Navigation -->
-    <nav class="navbar"><a href="index.html">Drew Death</a></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Essays</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://instagram.com/drew.death" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a></li>
-        </ul>
-    </nav>
+	<div class="nav-center">
+		<span>Observations in Light and Language</span>
+	</div>
 
+	<div class="nav-right">
+		<a href="index.html">Essays</a>
+		<a href="about.html">About</a>
+		<a href="https://instagram.com/drew.death" target="_blank">
+		<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+  
+	<!-- Hamburger icon -->
+	<div class="hamburger" id="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<!-- Mobile menu -->
+	<div class="mobile-menu" id="mobileMenu">
+		<a href="index.html">Essays</a>
+		<a href="about.html">About</a>
+		<a href="https://instagram.com/drew.death" target="_blank">
+			<i class="fab fa-instagram"></i>
+		</a>
+	</div>
+</nav>
 
     <main class="page-content">
         <h1>About</h1>
-        <p>
-            I create visual essays that explore moments, people, and places.  
-            My approach is simple: focus on authenticity, mood, and story.  
-            Through photography and words, I aim to capture experiences that feel both intimate and timeless.
-        </p>
+        <p>I capture a world that cannot fully understand itself, tracing the absurdity and beauty of life.</p>
     </main>
 
+	<script src="scripts.js"></script>
+	
 	<hr class="essay-end">
 	<footer class="site-footer">
-	  <p>&copy; 2025 Your Name. All rights reserved.</p>
+	  © <script>document.write(new Date().getFullYear());</script> Drew Deatherage<p>||•ō.|</p>
 	</footer>
 
 </body>
